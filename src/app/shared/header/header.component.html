@@ -1,0 +1,38 @@
+<header class="container">
+
+    <p class="topSign">
+        Sign up and get 20% off to your first order. 
+        <a routerLink="/signup">Sign Up Now</a>
+      </p>
+      
+    <div class="mainHeading">
+        <h1>SHOP.CO</h1>
+        <ul class="navigationLinks">
+            <li>
+                Shop <img (click)="toggleDropdown()" src="assets/images/downArrow.png" alt="down arrow" />
+                <ul class="subLinks" [class.open]="isDropdownOpen">
+                     <li>Men</li>
+                     <li>Women</li>
+                     <li>Children</li>
+                </ul>
+            </li>
+            <li>On Sale</li>
+            <li>New Arrivals</li>
+            <li>Brands</li>
+        </ul>
+
+        <div class="search">
+           <img alt="searchbar" src="/assets/images/SearchBar.png" /> <input placeholder="Search for products..."  />
+        </div>
+
+        <div style="display: flex;">
+            <div>
+              <img alt="cartIcon" src="/assets/images/cart.png" />
+            </div>
+    
+            <div>
+              <img alt="profileIcon" src="assets/images/userprofile.png" />
+            </div>
+        </div>
+    </div>
+</header>

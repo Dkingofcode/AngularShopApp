@@ -1,0 +1,29 @@
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: calc(100% * 5); /* Adjust based on the number of images */
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-slide img {
+    max-height: 80px;
+    object-fit: contain;
+    margin: 0 10px;
+  }
+  

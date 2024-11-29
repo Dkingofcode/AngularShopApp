@@ -1,0 +1,8 @@
+<div class="carousel">
+    <div class="carousel-track" [style.transform]="getTransformStyle()">
+      <div class="carousel-slide" *ngFor="let image of images">
+        <img [src]="image.src" [alt]="image.alt" />
+      </div>
+    </div>
+  </div>
+  

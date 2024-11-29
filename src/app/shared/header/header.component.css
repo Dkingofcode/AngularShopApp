@@ -1,0 +1,68 @@
+.topSign{
+    background: black;
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.mainHeading {
+  display: flex;
+  justify-content: center;
+  border: 3px solid black;
+  gap: 90px;
+  align-items: center;
+  
+}
+
+.mainHeading h1{ 
+    font-size: 50px;
+}
+
+.mainHeading .navigationLinks{
+  list-style-type: none;
+  display: flex;
+  gap: 10px;
+}
+
+.mainHeading .subLinks{
+    list-style-type: none;
+}
+
+.mainHeading .search{
+    border: 3px solid gainsboro;
+    display: flex;
+    background-color: rgb(250, 250, 249);
+    padding: 20px 5x;
+    gap: 10px;
+    padding-right: 150px;
+    border-radius: 10px;
+}
+
+.mainHeading .search input{
+    border: none;
+}
+
+.subLinks {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.subLinks.open {
+    display: block;
+    position: absolute;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+  
+.navigationLinks li {
+    position: relative;
+}
+  
+
+@media (max-width: 900px) {
+    .mainHeading h1{
+        font-size: 30px;
+    }
+  }
